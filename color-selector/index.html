@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paint Color Selector Golden CO | Sherwin-Williams &amp; PPG</title>
+<meta name="description" content="Preview Sherwin-Williams and PPG paint colors on a house before you commit. Built for Golden, CO light and elevation. Free estimates: 720-912-4676.">
+<link rel="canonical" href="https://paintersgoldenco.com/color-selector/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Golden CO Paint Color Selector">
+<meta property="og:description" content="Preview Sherwin-Williams and PPG combinations before you commit.">
+<meta property="og:url" content="https://paintersgoldenco.com/color-selector/">
+<meta property="og:image" content="https://paintersgoldenco.com/images/golden-co-painting-contractors.jpg">
+<meta property="og:site_name" content="Bighorn Painting">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="geo.region" content="US-CO">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="/images/bighorn-painting-favicon.png">
+<link rel="apple-touch-icon" href="/images/bighorn-painting-favicon.png">
+<meta name="theme-color" content="#ffffff">
+<style>
+:root{
+  --ink:#122033; --ink-2:#38485e; --muted:#5d6b7e; --line:#dce3ec;
+  --blue:#1b3a5c; --blue-deep:#0f2338; --blue-ink:#193350;
+  --orange:#b05a24; --orange-ink:#8f4719; --teal:#5f7a52; --sun:#c9972f;
+  --paper:#f6f3ec; --white:#fff;
+  --fd:'Spectral',Georgia,serif; --fu:'Manrope',system-ui,-apple-system,sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:150px}
+body{font-family:var(--fu);font-size:1.02rem;line-height:1.7;color:var(--ink);background:#fff;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--blue-ink)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+h1,h2,h3,h4{font-family:var(--fd);color:var(--ink);line-height:1.12;letter-spacing:-.015em;font-weight:700}
+h2{font-size:clamp(1.75rem,3.2vw,2.5rem);margin-bottom:12px}
+h3{font-size:1.18rem}
+section{padding:72px 0}
+.band{background:var(--paper)}
+.deep{background:var(--blue-deep);color:#fff}
+.deep h2,.deep h3,.deep h4{color:#fff}
+.deep p{color:rgba(255,255,255,.88)}
+.deep .lead{color:rgba(255,255,255,.82)}
+.deep .eyebrow{color:var(--sun)}
+.deep a{color:#fff}
+.lead{font-size:1.12rem;color:var(--muted);max-width:66ch}
+.eyebrow{font-family:var(--fu);font-weight:700;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--orange-ink);margin-bottom:10px;display:block}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:center}
+.split.wide{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr)}
+.split>*{min-width:0}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--fu);font-weight:700;font-size:1rem;text-decoration:none;border-radius:6px;padding:15px 24px;border:2px solid transparent;cursor:pointer;transition:transform .16s,background .16s,color .16s,border-color .16s;line-height:1.1}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:17px;height:17px;flex-shrink:0}
+.btn-call{background:var(--orange-ink);color:#fff}
+.btn-call:hover{background:#94400a}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:#0a4fae}
+.btn-sun{background:var(--sun);color:#3a2b00}
+.deep a.btn-sun,.deep .btn-sun{color:#3a2b00}
+.deep a.btn-call,.deep .btn-call{color:#fff}
+.deep a.btn-out,.deep .btn-out{color:var(--blue-deep)}
+.btn-sun:hover{background:#f0b61f}
+.btn-out{background:#fff;color:var(--blue-deep);border-color:var(--blue-deep)}
+.btn-out:hover{background:var(--blue-deep);color:#fff}
+.btn-ghost{background:#fff;color:var(--blue-ink);border-color:#bcd3ee}
+.btn-ghost:hover{background:var(--paper)}
+.deep .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-ghost:hover{background:#fff;color:var(--blue-deep)}
+
+.alertbar{background:var(--blue-deep);color:#fff;font-size:.92rem;padding:9px 0}
+.alertbar .wrap{display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap;text-align:center}
+.alertbar b{color:var(--sun)}
+.alertbar a{color:#fff;font-weight:700}
+.alertbar .fine{color:rgba(255,255,255,.66);font-size:.8rem}
+
+.site-head{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 14px rgba(18,32,51,.07)}
+.head-in{max-width:1300px;margin:0 auto;padding:9px 22px;display:flex;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0}
+.brand img{height:84px;width:auto;transition:height .22s}
+.site-head.tight .brand img{height:56px}
+.brand .bn{font-family:var(--fd);font-weight:700;font-size:1.22rem;color:var(--blue-deep);line-height:1.05}
+.brand .bn span{display:block;font-family:var(--fu);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-ink);font-weight:700}
+.nav{display:flex;align-items:center;gap:2px;margin-left:auto}
+.nav a,.drop-btn{font-family:var(--fu);font-weight:600;font-size:.94rem;color:var(--ink);text-decoration:none;padding:9px 11px;border-radius:5px;background:none;border:0;cursor:pointer}
+.nav a:hover,.drop-btn:hover,.nav a[aria-current="page"],.drop-btn[data-cur]{color:var(--orange-ink);background:var(--paper)}
+.drop{position:relative}
+.drop-menu{display:none;position:absolute;top:100%;left:0;background:#fff;border:1px solid var(--line);border-top:3px solid var(--orange);border-radius:0 0 8px 8px;box-shadow:0 20px 42px rgba(18,32,51,.16);min-width:250px;padding:6px;z-index:950}
+.drop:hover .drop-menu,.drop:focus-within .drop-menu,.drop.open .drop-menu{display:block}
+.nav .drop-menu a{display:block;padding:10px 12px;white-space:nowrap;font-weight:500}
+.ringer{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink)}
+.ringer .ic{width:38px;height:38px;border-radius:9px;background:var(--orange);color:#fff;display:grid;place-items:center;flex-shrink:0}
+.ringer .ic svg{width:19px;height:19px}
+.ringer b{display:block;font-weight:800;font-size:1.32rem;letter-spacing:-.02em;white-space:nowrap;font-family:var(--fu)}
+.ringer i{display:block;font-style:normal;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange-ink)}
+.head-cta{padding:12px 16px;font-size:.92rem}
+.burger{display:none;background:#fff;border:2px solid var(--blue-deep);border-radius:6px;color:var(--blue-deep);font-weight:700;padding:9px 12px;cursor:pointer;font-family:var(--fu)}
+.tray{display:none;background:#fff;border-top:1px solid var(--line);padding:4px 22px 18px}
+.tray.open{display:block}
+.tray a{display:block;color:var(--ink);text-decoration:none;font-weight:600;padding:12px 0;border-bottom:1px solid var(--line)}
+.tray .sub{padding-left:14px;font-weight:500;font-size:.95rem;color:var(--muted)}
+
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px;transition:transform .18s,box-shadow .18s}
+.card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(18,32,51,.1)}
+.card h3{margin-bottom:7px}
+.card p{color:var(--muted);font-size:.97rem}
+.deep .card{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.18)}
+.deep .card h3{color:#fff}.deep .card p{color:rgba(255,255,255,.85)}
+.card .n{font-family:var(--fd);font-size:2rem;font-weight:700;color:var(--orange);line-height:1}
+.pcard{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;text-decoration:none}
+.pcard img{aspect-ratio:3/2;object-fit:cover;width:100%;transition:transform .4s}
+.pcard:hover img{transform:scale(1.04)}
+.pcard .b{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pcard h3{font-size:1.14rem}
+.pcard p{color:var(--muted);font-size:.94rem;flex:1}
+.pcard .go{color:var(--orange-ink);font-weight:700;font-size:.93rem}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+.stats div{padding:20px;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats b{display:block;font-family:var(--fd);font-size:1.45rem;color:var(--blue-deep)}
+.stats span{font-size:.9rem;color:var(--muted)}
+
+.tbl{overflow-x:auto;margin:18px 0}
+.tbl table{width:100%;border-collapse:collapse;font-size:.96rem;min-width:540px;background:#fff;color:var(--ink)}
+.tbl th,.tbl td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink)}
+.tbl thead th{background:var(--blue-deep);color:#fff;font-weight:700}
+.tbl tbody td:first-child{font-weight:700;color:var(--blue-deep)}
+.tbl caption{caption-side:bottom;padding-top:9px;font-size:.84rem;color:var(--muted);text-align:left}
+
+.ticks{list-style:none}
+.ticks li{position:relative;padding:11px 0 11px 30px;border-bottom:1px solid var(--line);color:var(--muted)}
+.ticks li::before{content:"";position:absolute;left:2px;top:18px;width:14px;height:7px;border-left:3px solid var(--teal);border-bottom:3px solid var(--teal);transform:rotate(-45deg)}
+.ticks strong{color:var(--ink)}
+.deep .ticks li{border-color:rgba(255,255,255,.16);color:rgba(255,255,255,.86)}
+.deep .ticks strong{color:#fff}
+.steps{list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:58px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.steps li::before{content:counter(s);font-family:var(--fd);font-weight:700;font-size:1.5rem;color:#fff;background:var(--blue);width:44px;height:44px;border-radius:10px;display:grid;place-items:center;line-height:1}
+.steps p{color:var(--muted);margin-top:3px}
+.deep .steps li{border-color:rgba(255,255,255,.16)}
+.deep .steps li::before{background:var(--sun);color:#3a2b00}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.deep .chip{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.4);color:#fff}
+.deep a.chip:hover{background:rgba(255,255,255,.22);color:#fff}
+.chip{border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:.9rem;font-weight:600;color:var(--blue-deep);background:#fff;text-decoration:none}
+a.chip:hover{border-color:var(--blue);background:var(--paper)}
+.callout{background:var(--blue-deep);color:#fff;border-radius:12px;padding:28px 30px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.callout h3{font-size:1.5rem;color:#fff}
+.callout p{color:rgba(255,255,255,.85);margin-top:4px}
+.mapbox{border-radius:10px;overflow:hidden;border:1px solid var(--line);min-height:330px;background:var(--paper)}
+.mapbox iframe{width:100%;height:100%;min-height:330px;border:0;display:block}
+
+.formcard{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 44px rgba(18,32,51,.12);overflow:hidden}
+.formcard .top{background:var(--blue-deep);color:#fff;padding:18px 22px}
+.formcard .top .t{font-family:var(--fd);font-size:1.35rem;font-weight:700}
+.formcard .top p{color:rgba(255,255,255,.82);font-size:.89rem;margin-top:3px}
+.formcard .body{padding:20px 22px 22px}
+.fld{margin-bottom:12px}
+.fld label,.fld .lb{display:block;font-weight:600;font-size:.85rem;color:var(--blue-deep);margin-bottom:5px}
+.fld em{font-style:normal;color:var(--orange-ink)}
+.fld input,.fld select,.fld textarea{width:100%;font-family:var(--fu);font-size:1rem;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:12px;outline:none}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--blue);background:#fff}
+.fld textarea{min-height:88px;resize:vertical}
+.fld input[type=file]{background:#fff;border-style:dashed;padding:10px}
+.fld small{display:block;font-size:.79rem;color:var(--muted);margin-top:4px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+.msg{display:none;margin-top:12px;padding:12px 14px;border-radius:6px;font-size:.92rem;font-weight:600}
+.msg.ok{display:block;background:#e6f6ee;color:#13603a}
+.msg.warn{display:block;background:#fdecea;color:#8c2019}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.fine{font-size:.81rem;color:var(--muted);margin-top:10px;text-align:center}
+[hidden]{display:none!important}
+
+.faq{max-width:900px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:18px 0;font-family:var(--fd);font-weight:700;font-size:1.08rem;color:var(--blue-deep)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex-shrink:0;width:27px;height:27px;border-radius:7px;border:2px solid var(--blue-deep);display:grid;place-items:center;font-family:var(--fu);font-weight:700;transition:transform .22s}
+.faq details[open] summary::after{transform:rotate(45deg);background:var(--blue-deep);color:#fff}
+.faq .a{padding:0 0 18px;color:var(--muted);max-width:76ch}
+
+.crumb{background:var(--paper);border-bottom:1px solid var(--line);font-size:.85rem;padding:10px 0}
+.crumb ol{list-style:none;display:flex;gap:8px;flex-wrap:wrap}
+.crumb li+li::before{content:"/";margin-right:8px;color:var(--muted)}
+.crumb a{text-decoration:none;font-weight:600}
+
+.site-foot{background:#fff;border-top:4px solid var(--blue-deep);padding:50px 0 18px;font-size:.94rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:32px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.foot-grid img{height:110px;width:auto;margin-bottom:12px}
+.site-foot h3{font-family:var(--fu);font-size:.84rem;letter-spacing:.13em;text-transform:uppercase;color:var(--orange-ink);margin-bottom:11px}
+.site-foot ul{list-style:none}
+.site-foot li{margin-bottom:7px}
+.site-foot a{color:var(--ink);text-decoration:none}
+.site-foot a:hover{color:var(--orange-ink);text-decoration:underline}
+.site-foot address{font-style:normal;color:var(--muted);line-height:1.8}
+.fphone{font-weight:800;font-size:1.45rem;color:var(--blue-deep)!important;text-decoration:none!important}
+.foot-end{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:18px;font-size:.84rem;color:var(--muted)}
+@keyframes bump{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+
+.tapbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:950;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(18,32,51,.12);padding:8px;gap:8px}
+.tapbar a{flex:1;text-align:center;padding:13px 6px;border-radius:6px;font-weight:700;text-decoration:none;font-size:.97rem}
+.tapbar .c{background:var(--orange);color:#fff}
+.tapbar .q{background:var(--blue-deep);color:#fff}
+
+@media (max-width:1230px){.nav{display:none}.burger{display:block}.ringer{margin-left:auto}}
+@media (max-width:980px){.grid-3,.grid-4,.grid-2{grid-template-columns:1fr 1fr}.foot-grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(2n){border-right:0}}
+@media (max-width:760px){
+  .head-in{padding:8px 13px;gap:10px}
+  .brand img{height:56px}.site-head.tight .brand img{height:44px}
+  .brand .bn{font-size:1rem}.brand .bn span{font-size:.62rem}
+  .head-cta,.ringer i{display:none}
+  .ringer{background:var(--orange-ink);border-radius:6px;padding:9px 12px;gap:0}
+  .ringer .ic{display:none}
+  .ringer b{color:#fff;font-size:1.08rem;white-space:nowrap}
+  .alertbar{font-size:.81rem}.alertbar .fine{display:none}
+}
+@media (max-width:640px){
+  section{padding:52px 0}
+  .grid-2,.grid-3,.grid-4,.split,.split.wide,.duo,.stats{grid-template-columns:1fr}
+  .stats div{border-right:0;border-bottom:1px solid var(--line)}
+  .foot-grid{grid-template-columns:1fr}
+  .tapbar{display:flex}
+  body{padding-bottom:70px}
+}
+
+/* compat utilities */
+.pip{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-family:var(--fd);font-weight:800;color:#fff;margin-bottom:12px;font-size:1.05rem}
+.optgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.pick{position:relative;display:block}
+.pick input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.pick span{display:flex;align-items:center;min-height:46px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-weight:600;font-size:.92rem;background:var(--paper);cursor:pointer}
+.pick input:checked+span{border-color:var(--blue);background:#e8f0fb;box-shadow:inset 3px 0 0 var(--orange)}
+.pick input:focus-visible+span{outline:3px solid var(--sun);outline-offset:2px}
+.meter{display:grid;gap:10px;margin:16px 0}
+.meter .row{display:grid;grid-template-columns:150px 1fr;gap:12px;align-items:center}
+.meter .lb{font-size:.92rem;font-weight:600;color:var(--blue-deep)}
+.meter .bar{background:var(--paper);border-radius:4px;height:26px;overflow:hidden;border:1px solid var(--line)}
+.meter .fill{display:block;height:100%;width:0;transition:width 1.1s cubic-bezier(.2,.7,.3,1)}
+.meter .b1{background:linear-gradient(90deg,#5aa6ff,var(--blue))}
+.meter .b2{background:linear-gradient(90deg,var(--sun),var(--orange))}
+.meter .b3{background:linear-gradient(90deg,#54c9a6,var(--teal))}
+.grid-2>*,.grid-3>*,.grid-4>*,.split>*{min-width:0}
+@media (max-width:640px){.meter .row{grid-template-columns:1fr;gap:4px}.optgrid{grid-template-columns:1fr}}
+
+@media (max-width:430px){
+  .head-in{padding:7px 10px;gap:8px}
+  .brand img{height:46px!important}
+  .brand span{font-size:.92rem}
+  .brand span i{font-size:.58rem;letter-spacing:.1em}
+  .ringer{padding:8px 10px}
+  .ringer b{font-size:.98rem!important}
+  .burger{padding:8px 10px;font-size:.9rem}
+  .brand span{display:none}
+}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.hero{background:linear-gradient(180deg,#fff 0%,var(--paper) 100%);border-bottom:1px solid var(--line);padding:46px 0 52px}
+.hero-in{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:44px;align-items:center;max-width:var(--wrap);margin:0 auto;padding:0 22px}
+.hero h1{font-size:clamp(2.05rem,4.1vw,3.3rem);max-width:18ch;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--orange-ink)}
+.hero .sub{font-size:1.14rem;color:var(--muted);max-width:52ch;margin-bottom:22px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:20px}
+.hero-pts{display:grid;gap:8px;font-size:.98rem;font-weight:600;color:var(--blue-deep)}
+.hero-pts span{display:flex;gap:9px;align-items:flex-start}
+.hero-pts i{font-style:normal;color:var(--teal);font-weight:800}
+.flag{display:inline-flex;align-items:center;gap:8px;background:#fff6dd;border:1px solid #f3dd9c;color:#6b5100;border-radius:6px;padding:7px 13px;font-weight:700;font-size:.88rem;margin-bottom:14px;width:fit-content}
+.shots{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:8px}
+.shots img{width:100%;height:100%;object-fit:cover;border-radius:10px}
+.shots .tall{grid-row:1 / span 2;aspect-ratio:3/4}
+.shots .sm{aspect-ratio:4/3}
+.answer{border-left:5px solid var(--sun);background:var(--paper);border-radius:0 10px 10px 0;padding:24px 28px;display:grid;grid-template-columns:170px 1fr;gap:22px}
+.answer h2{font-size:1.3rem;margin:0}
+.answer p{color:var(--muted);max-width:78ch}
+.badges{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+.badge{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:6px;background:#fff;padding:9px 13px;font-weight:700;font-size:.88rem;color:var(--blue-deep)}
+.badge i{font-style:normal;color:var(--orange)}
+.colgrid{columns:3 220px;column-gap:26px}
+.colgrid a{display:block;padding:6px 0;text-decoration:none;font-weight:600;break-inside:avoid}
+@media (max-width:1000px){
+  .hero-in{grid-template-columns:1fr;gap:28px}
+  .answer{grid-template-columns:1fr;gap:10px}
+  .shots .tall{aspect-ratio:16/10}
+}
+
+.cs-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;margin-top:24px;align-items:start}
+.cs-targets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.tbtn{flex:1;min-width:130px;text-align:left;background:#fff;border:2px solid var(--line);border-radius:8px;padding:10px 12px;font:700 .92rem var(--fd);color:var(--blue-deep);cursor:pointer}
+.tbtn span{display:block;font:500 .78rem var(--fu);color:var(--muted);margin-top:2px}
+.tbtn.on{border-color:var(--blue);background:var(--paper)}
+.cs-filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.fbtn{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 13px;font:600 .84rem var(--fu);color:var(--blue-ink);cursor:pointer}
+.fbtn.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.cs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:10px}
+.sw{border:1px solid rgba(0,0,0,.14);border-radius:8px;min-height:84px;padding:10px;text-align:left;cursor:pointer;display:flex;flex-direction:column;justify-content:flex-end}
+.sw:hover{outline:3px solid var(--blue);outline-offset:2px}
+.sw-n{display:block;font:700 .84rem var(--fd);line-height:1.15}
+.sw-plate{background:rgba(255,255,255,.92);border-radius:5px;padding:5px 7px;color:#16202c}
+.sw-plate.dk{background:rgba(14,22,32,.86);color:#fff}
+.sw-c{display:block;font:600 .72rem var(--fu);opacity:.85;margin-top:2px}
+.cs-preview{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}
+.cs-preview svg{width:100%;height:auto;border-radius:8px;display:block}
+.cs-chosen{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:14px}
+.cs-row{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.cs-row .dot{width:30px;height:30px;border-radius:7px;border:1px solid rgba(0,0,0,.18);flex-shrink:0;background:#D1C7B8}
+.cs-row b{display:block;font-family:var(--fd);font-size:.96rem;color:var(--blue-deep)}
+.cs-row i{font-style:normal;font-size:.8rem;color:var(--muted)}
+.cs-row .who{margin-left:auto;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.cs-note{margin-top:12px;font-size:.88rem;color:var(--muted)}
+.cs-acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.cs-acts .btn{flex:1;min-width:150px}
+#csMsg{display:none;margin-top:10px;padding:10px 12px;border-radius:8px;font-weight:600;font-size:.9rem}
+#csMsg.ok{display:block;background:#e7f3ea;color:#1d5c2c}
+@media (max-width:900px){.cs-wrap{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://paintersgoldenco.com/color-selector/#webpage",
+   "url": "https://paintersgoldenco.com/color-selector/",
+   "name": "Paint Color Selector Golden CO | Sherwin-Williams & PPG",
+   "description": "Preview Sherwin-Williams and PPG paint colors on a house before you commit. Built for Golden, CO light and elevation. Free estimates: 720-912-4676.",
+   "isPartOf": {
+    "@id": "https://paintersgoldenco.com/#website"
+   },
+   "about": {
+    "@id": "https://paintersgoldenco.com/#business"
+   },
+   "inLanguage": "en-US",
+   "dateModified": "2026-10-07",
+   "primaryImageOfPage": "https://paintersgoldenco.com/images/golden-co-painting-contractors.jpg",
+   "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+     "h1",
+     ".sub",
+     "#hotline-answer"
+    ]
+   },
+   "breadcrumb": {
+    "@id": "https://paintersgoldenco.com/color-selector/#breadcrumb"
+   }
+  },
+  {
+   "@type": [
+    "HousePainter",
+    "LocalBusiness"
+   ],
+   "@id": "https://paintersgoldenco.com/#business",
+   "name": "Bighorn Painting",
+   "url": "https://paintersgoldenco.com/",
+   "telephone": "+17209124676",
+   "email": "asa@bighornpainting.com",
+   "logo": "https://paintersgoldenco.com/images/bighorn-painting-logo.png",
+   "image": "https://paintersgoldenco.com/images/golden-co-exterior-painting.jpeg",
+   "description": "Bighorn Painting serves Golden, Colorado and the foothills with interior and exterior house painting, historic and brick restoration, cabinet refinishing, deck, fence and log staining, rental turnovers, and commercial and HOA work. Fully insured with a 5-year workmanship warranty.",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Golden",
+    "addressRegion": "CO",
+    "postalCode": "80401",
+    "addressCountry": "US"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.7555,
+    "longitude": -105.2211
+   },
+   "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "95",
+    "bestRating": "5"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Golden, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Boulder, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Evergreen, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Morrison, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Idaho Springs, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Genesee, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Lookout Mountain, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Applewood, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Pleasant View, CO"
+    },
+    {
+     "@type": "City",
+     "name": "Clear Creek Canyon, CO"
+    }
+   ],
+   "priceRange": "$$",
+   "paymentAccepted": "Cash, Check, Credit Card",
+   "currenciesAccepted": "USD",
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+     ],
+     "opens": "07:00",
+     "closes": "19:00"
+    }
+   ],
+   "knowsAbout": [
+    "Interior painting",
+    "Exterior painting",
+    "Historic home painting",
+    "Brick and masonry coatings",
+    "Cabinet painting",
+    "Deck, fence and log staining",
+    "Rental turnover painting",
+    "Commercial and HOA painting",
+    "Lead-safe painting practices",
+    "High-altitude coating failure"
+   ],
+   "makesOffer": {
+    "@type": "Offer",
+    "name": "Free painting estimate",
+    "description": "Free written painting estimates in Golden, Colorado, virtual from photos or in person at the property.",
+    "url": "https://paintersgoldenco.com/free-estimates/"
+   },
+   "potentialAction": {
+    "@type": "AskAction",
+    "name": "Request a painting quote",
+    "target": {
+     "@type": "EntryPoint",
+     "urlTemplate": "https://paintersgoldenco.com/contact/",
+     "actionPlatform": [
+      "http://schema.org/DesktopWebPlatform",
+      "http://schema.org/MobileWebPlatform"
+     ]
+    }
+   },
+   "sameAs": [
+    "https://bighornpainting.com",
+    "https://paintersarvada.com",
+    "https://painterslakewood.com",
+    "https://painterswheatridge.com"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://paintersgoldenco.com/#website",
+   "url": "https://paintersgoldenco.com/",
+   "name": "Bighorn Painting",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://paintersgoldenco.com/#business"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://paintersgoldenco.com/color-selector/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://paintersgoldenco.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Color Selector",
+     "item": "https://paintersgoldenco.com/color-selector/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://paintersgoldenco.com/color-selector/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How do I pick exterior paint colors in Golden?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sample on the actual wall, not on a chip indoors. Paint a two-foot square, then look at it at midday and again at dusk. Golden's elevation and western exposure make colors read lighter and cooler outdoors than they do in a store."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What paint brands do you use?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sherwin-Williams and PPG. The exact product line and sheen are named on your written estimate rather than described as premium paint."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do colors fade faster at Golden's elevation?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, and saturated colors fade fastest. Deep reds, bright blues and strong greens lose intensity sooner than mid-tones under high-altitude ultraviolet exposure, especially on south and west walls."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I use any color in the historic district?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not automatically. Exterior color changes on landmarked and contributing properties in Golden go through historic preservation review before work begins. We help prepare the submission."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What about HOA communities like Genesee?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Most covenant communities publish an approved palette. Start there, and we will pull the list and prepare the submission before scheduling."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will you bring samples?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. We put samples on your actual surfaces and look at them in the light your house actually gets, rather than asking you to decide from a fan deck."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body data-h1="Zm9ybQ==" data-h2="c3VibWl0LmNv" data-u1="aW4=" data-u2="Zm8=" data-d1="ZXlldG9hZA==" data-d2="LmNvbQ==">
+<a class="sr" href="#main">Skip to content</a>
+<div class="alertbar"><div class="wrap"><span><b>Free estimates, virtual or in person, across Lakewood</b> &nbsp;&middot;&nbsp; <a href="/contact/">See the offer</a></span><span class="fine">Locally owned. Fully insured. 5-year workmanship warranty.</span></div></div>
+<header class="site-head">
+  <div class="head-in">
+    <a class="brand" href="/" aria-label="Bighorn Painting, home"><img src="/images/bighorn-painting-logo.png" alt="Bighorn Painting, house painters in Golden, Colorado" height="84" width="84" fetchpriority="high"><span class="bn">Bighorn Painting<span>Golden, Colorado</span></span></a>
+    <nav class="nav" aria-label="Main"><div class="drop"><button type="button" class="drop-btn" aria-expanded="false">Services <span aria-hidden="true">&#9662;</span></button><div class="drop-menu"><a href="/interior-painting-golden/">Interior painting</a><a href="/exterior-painting-golden/">Exterior painting</a><a href="/historic-home-painting-golden/">Historic &amp; brick</a><a href="/cabinet-painting-golden/">Cabinet painting</a><a href="/deck-staining-golden/">Deck, fence &amp; log staining</a><a href="/rental-turnover-painting-golden/">Student rentals &amp; turnovers</a><a href="/commercial-painting-golden/">Commercial &amp; HOA painting</a></div></div><div class="drop"><button type="button" class="drop-btn" data-cur="1" aria-expanded="false">Learn <span aria-hidden="true">&#9662;</span></button><div class="drop-menu"><a href="/painting-cost-golden/">What painting costs</a><a href="/color-selector/" aria-current="page">Color selector</a><a href="/blog/">Painting guides</a><a href="/warranty/">5-year warranty</a><a href="/faq/">Painting FAQ</a></div></div><a href="/service-areas/">Service areas</a><a href="/neighborhoods/">Golden neighborhoods</a><a href="/about/">About</a><a href="/contact/">Free estimate</a></nav>
+    <a class="ringer" href="tel:+17209124676" aria-label="Call 720-912-4676"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span><span><b>720-912-4676</b><i>Golden &amp; the foothills</i></span></a>
+    <a class="btn btn-call head-cta" href="/contact/" data-quote>Get my quote</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="tray">Menu</button>
+  </div>
+  <nav class="tray" id="tray" aria-label="Mobile"><a href="/">Home</a><a class="sub" href="/interior-painting-golden/">Interior painting</a><a class="sub" href="/exterior-painting-golden/">Exterior painting</a><a class="sub" href="/historic-home-painting-golden/">Historic &amp; brick</a><a class="sub" href="/cabinet-painting-golden/">Cabinet painting</a><a class="sub" href="/deck-staining-golden/">Deck, fence &amp; log staining</a><a class="sub" href="/rental-turnover-painting-golden/">Student rentals &amp; turnovers</a><a class="sub" href="/commercial-painting-golden/">Commercial &amp; HOA painting</a><a class="sub" href="/painting-cost-golden/">What painting costs</a><a class="sub" href="/color-selector/">Color selector</a><a class="sub" href="/blog/">Painting guides</a><a class="sub" href="/warranty/">5-year warranty</a><a class="sub" href="/faq/">Painting FAQ</a><a href="/service-areas/">Service areas</a><a href="/neighborhoods/">Golden neighborhoods</a><a href="/about/">About</a><a href="/contact/">Free estimate</a><a href="/contact/" data-quote style="color:var(--orange-ink)">Get my free estimate</a></nav>
+</header><nav class="crumb" aria-label="Breadcrumb"><div class="wrap"><ol><li><a href="/">Home</a></li><li aria-current="page">Color Selector</li></ol></div></nav>
+<main id="main">
+<section class="hero" aria-label="Golden color selector.">
+  <div class="hero-in">
+    <div>
+      
+      <h1>Golden <em>color selector</em>.</h1>
+      <p class="sub">Twenty-eight Sherwin-Williams and PPG colors that actually hold up at 5,675 feet, with a live preview so you can see a body, trim and accent combination before anyone opens a can.</p>
+      <div class="hero-btns">
+        <a class="btn btn-call" href="tel:+17209124676"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg> Call 720-912-4676</a>
+        <a class="btn btn-out" href="/contact/" data-quote>Get my free quote</a>
+      </div>
+      <div class="hero-pts"><span><i>&#10003;</i>Sherwin-Williams and PPG colors only</span><span><i>&#10003;</i>Live house preview: body, trim and accent</span><span><i>&#10003;</i>Notes on how each color behaves in foothills light</span><span><i>&#10003;</i>Send your picks straight to your estimate</span></div>
+    </div>
+    <div class="shots"><img class="tall" src="/images/golden-co-painting-contractors.jpg" alt="Paint color selection for a Golden, Colorado home" width="620" height="820" fetchpriority="high" decoding="async"><img class="sm" src="/images/golden-co-interior-painters.jpg" alt="Interior color consultation in Golden, CO" loading="lazy" decoding="async" width="420" height="320"><img class="sm" src="/images/golden-co-exterior-painting.jpeg" alt="Exterior paint colors in Golden, CO" loading="lazy" decoding="async" width="420" height="320"></div>
+  </div>
+</section><section style="padding:48px 0 6px"><div class="wrap"><div class="answer" id="hotline-answer"><h2>Quick answer</h2><div><p><strong>Bighorn Painting</strong> works in <strong>Sherwin-Williams and PPG</strong> colors. This selector lets you preview a body, trim and accent combination on a simple house illustration, then send the combination with your estimate request. Colors render differently at Golden's elevation than they do on a chip indoors, so we also bring physical samples and test them on your actual surfaces before anything is purchased. Call <a href="tel:+17209124676">720-912-4676</a>.</p></div></div></div></section>
+<section aria-labelledby="tool-h"><div class="wrap">
+  <span class="eyebrow">Try a combination</span>
+  <h2 id="tool-h">Build your color scheme</h2>
+  <p class="lead">Choose which part of the house you are coloring, then tap a swatch. The preview updates as you go.</p>
+  <div class="cs-wrap">
+    <div class="cs-left">
+      <div class="cs-targets" role="group" aria-label="Choose which surface to color">
+        <button type="button" class="tbtn on" data-t="body">Body <span id="lbl-body">Agreeable Gray</span></button>
+        <button type="button" class="tbtn" data-t="trim">Trim <span id="lbl-trim">Pure White</span></button>
+        <button type="button" class="tbtn" data-t="accent">Door &amp; accent <span id="lbl-accent">Urbane Bronze</span></button>
+      </div>
+      <div class="cs-filters" role="group" aria-label="Filter colors by family"><button type="button" class="fbtn on" data-f="all">All colors</button><button type="button" class="fbtn" data-f="whites">Whites &amp; off-whites</button><button type="button" class="fbtn" data-f="neutrals">Warm neutrals &amp; greige</button><button type="button" class="fbtn" data-f="earth">Earth &amp; foothills tones</button><button type="button" class="fbtn" data-f="deeps">Deep accents</button><button type="button" class="fbtn" data-f="trim">Trim colors</button></div>
+      <div class="cs-grid" id="csGrid"><button type="button" class="sw" data-group="whites" data-brand="Sherwin-Williams" data-name="Alabaster" data-code="SW 7008" data-hex="#EDEAE0" style="background:#EDEAE0;color:#16202c" aria-label="Alabaster SW 7008 by Sherwin-Williams"><span class="sw-plate"><span class="sw-n">Alabaster</span><span class="sw-c">SW 7008</span></span></button><button type="button" class="sw" data-group="whites" data-brand="Sherwin-Williams" data-name="Pure White" data-code="SW 7005" data-hex="#EDECE6" style="background:#EDECE6;color:#16202c" aria-label="Pure White SW 7005 by Sherwin-Williams"><span class="sw-plate"><span class="sw-n">Pure White</span><span class="sw-c">SW 7005</span></span></button><button type="button" class="sw" data-group="whites" data-brand="Sherwin-Williams" data-name="Snowbound" data-code="SW 7004" data-hex="#EDEAE5" style="background:#EDEAE5;color:#16202c" aria-label="Snowbound SW 7004 by Sherwin-Williams"><span class="sw-plate"><span class="sw-n">Snowbound</span><span class="sw-c">SW 7004</span></span></button><button type="button" class="sw" data-group="whites" data-brand="Sherwin-Williams" data-name="Shoji White" data-code="SW 7042" data-hex="#E7E0D4" style="background:#E7E0D4;color:#16202c" aria-label="Shoji White SW 7042 by Sherwin-Williams"><span class="sw-plate"><span class="sw-n">Shoji White</span><span class="sw-c">SW 7042</span></span></button><button type="button" class="sw" data-group="whites" data-brand="PPG" data-name="Delicate White" data-code="PPG1001-1" data-hex="#F0EDE5" style="background:#F0EDE5;color:#16202c" aria-label="Delicate White PPG1001-1 by PPG"><span class="sw-plate"><span class="sw-n">Delicate White</span><span class="sw-c">PPG1001-1</span></span></button><button type="button" class="sw" data-group="whites" data-brand="PPG" data-name="Commercial White" data-code="PPG1001-1" data-hex="#EFEDE6" style="background:#EFEDE6;color:#16202c" aria-label="Commercial White PPG1001-1 by PPG"><span class="sw-plate"><span class="sw-n">Commercial White</span><span class="sw-c">PPG1001-1</span></span></button><button type="button" class="sw" data-group="neutrals" data-brand="Sherwin-Williams" data-name="Agreeable Gray" data-code="SW 7029" data-hex="#D1C7B8" style="background:#D1C7B8;color:#16202c" aria-label="Agreeable Gray SW 7029 by Sherwin-Williams"><span class="sw-plate"><span class="sw-n">Agreeable Gray</span><span class="sw-c">SW 7029</span></span></button><button type="button" class="sw" data-group="neutrals" data-brand="Sherwin-Williams" data-name="Repose Gray" data-code="SW 7015" data-hex="#CCC9C0" style="background:#CCC9C0;color:#16202c" aria-label="Repose Gray SW 7015 by Sherwin-Williams"><span class="sw-plate"><span class="sw-n">Repose Gray</span><span class="sw-c">SW 7015</span></span></button><button type="button" class="sw" data-group="neutrals" data-brand="Sherwin-Williams" data-name="Accessible Beige" data-code="SW 7036" data-hex="#D2C7B5" style="background:#D2C7B5;color:#16202c" aria-label="Accessible Beige SW 7036 by Sherwin-Williams"><span class="sw-plate"><span class="sw-n">Accessible Beige</span><span class="sw-c">SW 7036</span></span></button><button type="button" class="sw" data-group="neutrals" data-brand="Sherwin-Williams" data-name="Mindful Gray" data-code="SW 7016" data-hex="#BCB7AE" style="background:#BCB7AE;color:#16202c" aria-label="Mindful Gray SW 7016 by Sherwin-Williams"><span class="sw-plate"><span class="sw-n">Mindful Gray</span><span class="sw-c">SW 7016</span></span></button><button type="button" class="sw" data-group="neutrals" data-brand="PPG" data-name="Chinchilla" data-code="PPG1006-4" data-hex="#B8B2A7" style="background:#B8B2A7;color:#16202c" aria-label="Chinchilla PPG1006-4 by PPG"><span class="sw-plate"><span class="sw-n">Chinchilla</span><span class="sw-c">PPG1006-4</span></span></button><button type="button" class="sw" data-group="neutrals" data-brand="PPG" data-name="Stonehenge Greige" data-code="PPG1024-4" data-hex="#BFB4A4" style="background:#BFB4A4;color:#16202c" aria-label="Stonehenge Greige PPG1024-4 by PPG"><span class="sw-plate"><span class="sw-n">Stonehenge Greige</span><span class="sw-c">PPG1024-4</span></span></button><button type="button" class="sw" data-group="deeps" data-brand="Sherwin-Williams" data-name="Urbane Bronze" data-code="SW 7048" data-hex="#53514C" style="background:#53514C;color:#ffffff" aria-label="Urbane Bronze SW 7048 by Sherwin-Williams"><span class="sw-plate dk"><span class="sw-n">Urbane Bronze</span><span class="sw-c">SW 7048</span></span></button><button type="button" class="sw" data-group="deeps" data-brand="Sherwin-Williams" data-name="Iron Ore" data-code="SW 7069" data-hex="#434341" style="background:#434341;color:#ffffff" aria-label="Iron Ore SW 7069 by Sherwin-Williams"><span class="sw-plate dk"><span class="sw-n">Iron Ore</span><span class="sw-c">SW 7069</span></span></button><button type="button" class="sw" data-group="deeps" data-brand="Sherwin-Williams" data-name="Tricorn Black" data-code="SW 6258" data-hex="#2F2F30" style="background:#2F2F30;color:#ffffff" aria-label="Tricorn Black SW 6258 by Sherwin-Williams"><span class="sw-plate dk"><span class="sw-n">Tricorn Black</span><span class="sw-c">SW 6258</span></span></button><button type="button" class="sw" data-group="deeps" data-brand="Sherwin-Williams" data-name="Naval" data-code="SW 6244" data-hex="#1E2F45" style="background:#1E2F45;color:#ffffff" aria-label="Naval SW 6244 by Sherwin-Williams"><span class="sw-plate dk"><span class="sw-n">Naval</span><span class="sw-c">SW 6244</span></span></button><button type="button" class="sw" data-group="deeps" data-brand="PPG" data-name="Black Magic" data-code="PPG1001-7" data-hex="#36373B" style="background:#36373B;color:#ffffff" aria-label="Black Magic PPG1001-7 by PPG"><span class="sw-plate dk"><span class="sw-n">Black Magic</span><span class="sw-c">PPG1001-7</span></span></button><button type="button" class="sw" data-group="deeps" data-brand="PPG" data-name="Dark Granite" data-code="PPG1001-6" data-hex="#54565A" style="background:#54565A;color:#ffffff" aria-label="Dark Granite PPG1001-6 by PPG"><span class="sw-plate dk"><span class="sw-n">Dark Granite</span><span class="sw-c">PPG1001-6</span></span></button><button type="button" class="sw" data-group="earth" data-brand="Sherwin-Williams" data-name="Evergreen Fog" data-code="SW 9130" data-hex="#95978A" style="background:#95978A;color:#16202c" aria-label="Evergreen Fog SW 9130 by Sherwin-Williams"><span class="sw-plate"><span class="sw-n">Evergreen Fog</span><span class="sw-c">SW 9130</span></span></button><button type="button" class="sw" data-group="earth" data-brand="Sherwin-Williams" data-name="Pewter Green" data-code="SW 6208" data-hex="#5E6558" style="background:#5E6558;color:#ffffff" aria-label="Pewter Green SW 6208 by Sherwin-Williams"><span class="sw-plate dk"><span class="sw-n">Pewter Green</span><span class="sw-c">SW 6208</span></span></button><button type="button" class="sw" data-group="earth" data-brand="Sherwin-Williams" data-name="Rookwood Clay" data-code="SW 2803" data-hex="#8E6B55" style="background:#8E6B55;color:#ffffff" aria-label="Rookwood Clay SW 2803 by Sherwin-Williams"><span class="sw-plate dk"><span class="sw-n">Rookwood Clay</span><span class="sw-c">SW 2803</span></span></button><button type="button" class="sw" data-group="earth" data-brand="PPG" data-name="Rustic Adobe" data-code="PPG1071-6" data-hex="#8F5B44" style="background:#8F5B44;color:#ffffff" aria-label="Rustic Adobe PPG1071-6 by PPG"><span class="sw-plate dk"><span class="sw-n">Rustic Adobe</span><span class="sw-c">PPG1071-6</span></span></button><button type="button" class="sw" data-group="earth" data-brand="PPG" data-name="Cliffside Park" data-code="PPG1032-5" data-hex="#8C8372" style="background:#8C8372;color:#16202c" aria-label="Cliffside Park PPG1032-5 by PPG"><span class="sw-plate"><span class="sw-n">Cliffside Park</span><span class="sw-c">PPG1032-5</span></span></button><button type="button" class="sw" data-group="earth" data-brand="PPG" data-name="Olive Grove" data-code="PPG1121-6" data-hex="#6F7254" style="background:#6F7254;color:#ffffff" aria-label="Olive Grove PPG1121-6 by PPG"><span class="sw-plate dk"><span class="sw-n">Olive Grove</span><span class="sw-c">PPG1121-6</span></span></button><button type="button" class="sw" data-group="trim" data-brand="Sherwin-Williams" data-name="Dovetail" data-code="SW 7018" data-hex="#7A736B" style="background:#7A736B;color:#ffffff" aria-label="Dovetail SW 7018 by Sherwin-Williams"><span class="sw-plate dk"><span class="sw-n">Dovetail</span><span class="sw-c">SW 7018</span></span></button><button type="button" class="sw" data-group="trim" data-brand="Sherwin-Williams" data-name="Westhighland White" data-code="SW 7566" data-hex="#EDE6DA" style="background:#EDE6DA;color:#16202c" aria-label="Westhighland White SW 7566 by Sherwin-Williams"><span class="sw-plate"><span class="sw-n">Westhighland White</span><span class="sw-c">SW 7566</span></span></button><button type="button" class="sw" data-group="trim" data-brand="Sherwin-Williams" data-name="Gauntlet Gray" data-code="SW 7019" data-hex="#64605C" style="background:#64605C;color:#ffffff" aria-label="Gauntlet Gray SW 7019 by Sherwin-Williams"><span class="sw-plate dk"><span class="sw-n">Gauntlet Gray</span><span class="sw-c">SW 7019</span></span></button><button type="button" class="sw" data-group="trim" data-brand="PPG" data-name="Antique Silver" data-code="PPG1010-4" data-hex="#B4B2AA" style="background:#B4B2AA;color:#16202c" aria-label="Antique Silver PPG1010-4 by PPG"><span class="sw-plate"><span class="sw-n">Antique Silver</span><span class="sw-c">PPG1010-4</span></span></button></div>
+    </div>
+    <div class="cs-right">
+      <div class="cs-preview" aria-live="polite">
+        <svg viewBox="0 0 400 300" role="img" aria-label="House preview showing your selected body, trim and accent colors">
+          <rect x="0" y="0" width="400" height="300" fill="#dfe8f0"/>
+          <rect x="0" y="240" width="400" height="60" fill="#9fb08a"/>
+          <polygon points="200,40 370,130 30,130" id="pvRoof" fill="#5a5a57"/>
+          <rect x="60" y="130" width="280" height="120" id="pvBody" fill="#D1C7B8"/>
+          <rect x="60" y="126" width="280" height="10" id="pvTrim1" fill="#EDECE6"/>
+          <rect x="178" y="180" width="44" height="70" id="pvDoor" fill="#53514C"/>
+          <rect x="174" y="176" width="52" height="6" id="pvTrim2" fill="#EDECE6"/>
+          <rect x="95" y="160" width="52" height="46" id="pvWin1" fill="#cfe0ea" stroke="#EDECE6" stroke-width="6" />
+          <rect x="253" y="160" width="52" height="46" id="pvWin2" fill="#cfe0ea" stroke="#EDECE6" stroke-width="6" />
+          <rect x="95" y="214" width="52" height="8" id="pvTrim3" fill="#EDECE6"/>
+          <rect x="253" y="214" width="52" height="8" id="pvTrim4" fill="#EDECE6"/>
+        </svg>
+      </div>
+      <div class="cs-chosen">
+        <div class="cs-row"><span class="dot" id="dot-body"></span><div><b id="nm-body">Agreeable Gray</b><i id="cd-body">SW 7029</i></div><span class="who">Body</span></div>
+        <div class="cs-row"><span class="dot" id="dot-trim"></span><div><b id="nm-trim">Pure White</b><i id="cd-trim">SW 7005</i></div><span class="who">Trim</span></div>
+        <div class="cs-row"><span class="dot" id="dot-accent"></span><div><b id="nm-accent">Urbane Bronze</b><i id="cd-accent">SW 7048</i></div><span class="who">Accent</span></div>
+        <p class="cs-note" id="csNote">Tap a swatch to see how it behaves in Golden light.</p>
+        <div class="cs-acts">
+          <button type="button" class="btn btn-call" id="csSend">Use these colors in my estimate</button>
+          <button type="button" class="btn btn-ghost" id="csCopy">Copy the list</button>
+        </div>
+        <div class="msg" id="csMsg" role="status" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="band" aria-labelledby="fam-h"><div class="wrap">
+  <span class="eyebrow">How to use the families</span>
+  <h2 id="fam-h">What each color family is good for</h2>
+  <div class="grid-3" style="margin-top:22px"><div class="card"><h3>Whites &amp; off-whites</h3><p>Trim, soffit and ceilings, plus whole-house schemes on historic homes.</p></div><div class="card"><h3>Warm neutrals &amp; greige</h3><p>The most-requested body colors in Golden, and the safest with stone and brick.</p></div><div class="card"><h3>Earth &amp; foothills tones</h3><p>Colors that sit well against sandstone, pine and the hogback.</p></div><div class="card"><h3>Deep accents</h3><p>Doors, shutters, garage doors and timber. Dramatic, and they fade faster on full walls.</p></div><div class="card"><h3>Trim colors</h3><p>Pairings that frame the body color instead of competing with it.</p></div></div>
+  <div class="card" style="margin-top:22px;border-top:5px solid var(--orange)">
+    <h3>Before you fall in love with a color</h3>
+    <p style="margin-top:8px">Sample it on the actual wall. A two-foot square on the real surface, looked at in morning, midday and evening light, tells you more than an hour with a fan deck. Colors read lighter and cooler outdoors here, and what looks rich in the store often washes out on a sunny Golden elevation.</p>
+    <p style="margin-top:8px">If your home is in a historic district or a covenant community, check the approved palette before sampling. We will pull the list and handle the submission.</p>
+  </div>
+</div></section><section id="faq" aria-labelledby="faq-h"><div class="wrap"><span class="eyebrow">Straight answers</span><h2 id="faq-h">Color questions from Golden homeowners</h2><div class="faq"><details><summary>How do I pick exterior paint colors in Golden?</summary><div class="a"><p>Sample on the actual wall, not on a chip indoors. Paint a two-foot square, then look at it at midday and again at dusk. Golden's elevation and western exposure make colors read lighter and cooler outdoors than they do in a store.</p></div></details>
+<details><summary>What paint brands do you use?</summary><div class="a"><p>Sherwin-Williams and PPG. The exact product line and sheen are named on your written estimate rather than described as premium paint.</p></div></details>
+<details><summary>Do colors fade faster at Golden's elevation?</summary><div class="a"><p>Yes, and saturated colors fade fastest. Deep reds, bright blues and strong greens lose intensity sooner than mid-tones under high-altitude ultraviolet exposure, especially on south and west walls.</p></div></details>
+<details><summary>Can I use any color in the historic district?</summary><div class="a"><p>Not automatically. Exterior color changes on landmarked and contributing properties in Golden go through historic preservation review before work begins. We help prepare the submission.</p></div></details>
+<details><summary>What about HOA communities like Genesee?</summary><div class="a"><p>Most covenant communities publish an approved palette. Start there, and we will pull the list and prepare the submission before scheduling.</p></div></details>
+<details><summary>Will you bring samples?</summary><div class="a"><p>Yes. We put samples on your actual surfaces and look at them in the light your house actually gets, rather than asking you to decide from a fan deck.</p></div></details></div></div></section><section class="band" id="quote" aria-labelledby="quote-h">
+  <div class="wrap"><div class="split wide" style="align-items:start">
+    <div>
+      <span class="eyebrow">Free quote</span>
+      <h2 id="quote-h">Send your colors with your estimate request</h2>
+      <p class="lead" style="margin-bottom:16px">Tell the hotline what you need. You get a written quote, no pressure and no obligation.</p>
+      <div class="badges">
+        <span class="badge"><i>&#9679;</i> 20+ years experience</span>
+        <span class="badge"><i>&#9679;</i> Fully insured</span>
+        <span class="badge"><i>&#9679;</i> 5-year workmanship warranty</span>
+        <span class="badge"><i>&#9679;</i> 25% off through Oct 31, 2026</span>
+      </div>
+      <p style="margin-top:18px"><a class="btn btn-blue" href="tel:+17209124676"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg> Call the hotline</a></p>
+      
+    </div>
+    <div class="formcard">
+      <div class="top"><div class="t">Reach the hotline</div><p>Name and number is all it takes to start.</p></div>
+      <div class="body">
+        <form data-lead data-subject="ESTIMATE: Bighorn Painting (color selector)" novalidate>
+          <input type="hidden" name="source_site" value="paintersgoldenco.com /color-selector/">
+          <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+          <div class="duo">
+            <div class="fld"><label for="cs_n">Name <em>*</em></label><input id="cs_n" name="user_name" autocomplete="name" required></div>
+            <div class="fld"><label for="cs_p">Phone <em>*</em></label><input id="cs_p" name="user_phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
+            <div class="fld"><label for="cs_e">Email</label><input id="cs_e" name="user_email" type="email" autocomplete="email"></div>
+            <div class="fld"><label for="cs_z">Project ZIP</label><input id="cs_z" name="user_zip" inputmode="numeric" autocomplete="postal-code" maxlength="10"></div>
+          </div>
+          <div class="fld"><label for="cs_s">What needs painting?</label><select id="cs_s" name="project_type"><option value="">Choose one</option><option>Interior painting</option><option>Exterior painting</option><option>Cabinet painting</option><option>Deck or fence staining</option><option>Whole-home repaint</option><option>Commercial property</option><option>Fixing failed paint work</option><option>Not sure yet</option></select></div>
+          <div class="fld"><label for="cs_t">How soon?</label><select id="cs_t" name="timeline"><option value="">Choose one</option><option>This week if possible</option><option>Within a month</option><option>1 to 3 months</option><option>Pricing and planning</option></select></div>
+          <div class="fld"><label for="cs_f">Photos (optional, up to 4)</label><input id="cs_f" name="photos" type="file" accept="image/*" multiple><small>Photos get you a faster, more accurate number.</small></div>
+          <div class="fld"><label for="cs_m">Details</label><textarea id="cs_m" name="user_message" placeholder="Rooms, square footage, colors, HOA rules, paint that is already failing..."></textarea></div>
+          <button type="submit" class="btn btn-call" style="width:100%;padding:16px">Send it to the hotline</button>
+          <div class="msg" role="status" aria-live="polite"></div>
+          <noscript><p class="fine">This form needs JavaScript. Call <a href="tel:+17209124676">720-912-4676</a> instead.</p></noscript>
+          <p class="fine">Used only to prepare your quote. We never sell your information.</p>
+        </form>
+      </div>
+    </div>
+  </div></div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="/images/bighorn-painting-logo.png" alt="Bighorn Painting, house painters in Golden, Colorado" height="110" width="110" loading="lazy" decoding="async">
+        <p style="color:var(--muted);max-width:40ch;margin-bottom:12px">Painting company serving Golden, Colorado and the foothills. Interior and exterior house painting, historic and brick restoration, cabinets, deck and log staining, rentals and commercial work across Golden, Boulder, Evergreen, Morrison, Genesee and Idaho Springs. Fully insured, 4.9 stars on Google, 5-year workmanship warranty.</p>
+        <a class="fphone" href="tel:+17209124676">720-912-4676</a>
+        <p style="margin-top:14px;font-size:.86rem;color:var(--muted)">More from Bighorn Painting: <a href="https://bighornpainting.com/">bighornpainting.com</a> &middot; <a href="https://paintersarvada.com/">Arvada</a> &middot; <a href="https://painterslakewood.com/">Lakewood</a> &middot; <a href="https://painterswheatridge.com/">Wheat Ridge</a></p>
+      </div>
+      <div><h3>Painting services</h3><ul>
+        <li><a href="/interior-painting-golden/">Interior painting</a></li>
+        <li><a href="/exterior-painting-golden/">Exterior painting</a></li>
+        <li><a href="/historic-home-painting-golden/">Historic &amp; brick restoration</a></li>
+        <li><a href="/cabinet-painting-golden/">Cabinet painting</a></li>
+        <li><a href="/deck-staining-golden/">Deck, fence &amp; log staining</a></li>
+        <li><a href="/rental-turnover-painting-golden/">Student rentals &amp; turnovers</a></li>
+        <li><a href="/commercial-painting-golden/">Commercial &amp; HOA painting</a></li>
+      </ul></div>
+      <div><h3>Before you hire</h3><ul>
+        <li><a href="/painting-cost-golden/">What painting costs</a></li>
+        <li><a href="/color-selector/">Color selector</a></li>
+        <li><a href="/blog/">Painting guides</a></li>
+        
+        <li><a href="/warranty/">5-year warranty</a></li>
+        <li><a href="/faq/">Painting FAQ</a></li>
+        <li><a href="/service-areas/">Service areas</a></li>
+          <li><a href="/neighborhoods/">Golden neighborhoods</a></li>
+        <li><a href="/about/">About us</a></li>
+      </ul></div>
+      <div><h3>Get in touch</h3>
+        <address>
+          12191 W 64th Ave Unit 102-8<br>
+          Arvada, CO 80004<br>
+          <a href="tel:+17209124676">720-912-4676</a><br>
+          <a class="eml" data-u="YXNh" data-d="YmlnaG9ybnBhaW50aW5nLmNvbQ==" href="/contact/">Email us</a><br>
+          Quotes 7 days a week
+        </address>
+        
+      </div>
+    </div>
+    <div class="foot-end">
+      <div>&copy; <span class="yr">2026</span> Bighorn Painting. Fully insured. 5-year workmanship warranty.</div>
+      <div><a href="/service-areas/">Service areas</a> &middot; <a href="/faq/">FAQ</a> &middot; <a href="/contact/">Contact</a></div>
+    </div>
+  </div>
+</footer>
+<div class="tapbar"><a class="c" href="tel:+17209124676">Call 720-912-4676</a><a class="q" href="/contact/" data-quote>Free estimate</a></div><script>
+(function(){
+  document.querySelectorAll('.yr').forEach(function(y){y.textContent=new Date().getFullYear();});
+  var b=document.getElementById('burger'),tr=document.getElementById('tray');
+  if(b){b.addEventListener('click',function(){var o=tr.classList.toggle('open');b.setAttribute('aria-expanded',o);});}
+  document.querySelectorAll('.drop-btn').forEach(function(x){x.addEventListener('click',function(){var o=x.parentNode.classList.toggle('open');x.setAttribute('aria-expanded',o);});});
+  document.addEventListener('click',function(e){document.querySelectorAll('.drop.open').forEach(function(d){if(!d.contains(e.target)){d.classList.remove('open');d.querySelector('.drop-btn').setAttribute('aria-expanded','false');}});});
+  var sh=document.querySelector('.site-head'),tight=false;
+  if(sh){function hs(){var y=window.scrollY||0;if(!tight&&y>220){tight=true;sh.classList.add('tight');}else if(tight&&y<40){tight=false;sh.classList.remove('tight');}}window.addEventListener('scroll',hs,{passive:true});hs();}
+  function d(s){try{return atob(s||'');}catch(e){return '';}}
+  var at=String.fromCharCode(64),B=document.body.dataset;
+  document.querySelectorAll('a.eml').forEach(function(a){var v=d(a.getAttribute('data-u'))+at+d(a.getAttribute('data-d'));a.href='mailto:'+v;a.textContent=v;});
+  var t0=Date.now(),human=false;
+  ['keydown','pointerdown','touchstart'].forEach(function(ev){document.addEventListener(ev,function(){human=true;},{passive:true});});
+  var PH='+17209124676',PD='720-912-4676';
+  function shrink(file){
+    return new Promise(function(res){
+      if(!/^image\/(jpeg|png|webp)$/.test(file.type)){res(file.size<3e6?file:null);return;}
+      var img=new Image(),u=URL.createObjectURL(file);
+      img.onload=function(){var m=1600,w=img.width,h=img.height,s=Math.min(1,m/Math.max(w,h));
+        var c=document.createElement('canvas');c.width=Math.round(w*s);c.height=Math.round(h*s);
+        c.getContext('2d').drawImage(img,0,0,c.width,c.height);URL.revokeObjectURL(u);
+        c.toBlob(function(bl){res(bl?new File([bl],'photo.jpg',{type:'image/jpeg'}):null);},'image/jpeg',.82);};
+      img.onerror=function(){URL.revokeObjectURL(u);res(null);};img.src=u;});
+  }
+  window.BGO={
+    tel:PH,disp:PD,
+    photos:function(input){var f=Array.prototype.slice.call((input&&input.files)||[],0,4);return Promise.all(f.map(shrink)).then(function(a){return a.filter(Boolean);});},
+    send:function(fd,subject){
+      if(!human)return Promise.resolve('blocked');
+      if(Date.now()-t0<4000)return Promise.resolve('fast');
+      fd.append('_subject',subject);fd.append('_captcha','false');fd.append('_template','table');
+      var url='https://'+d(B.h1)+d(B.h2)+'/'+d(B.u1)+d(B.u2)+at+d(B.d1)+d(B.d2);
+      return fetch(url,{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+        .then(function(r){return r.json().catch(function(){return {};}).then(function(j){return (r.ok&&(j.success===true||j.success==='true'))?'ok':'unconfirmed';});})
+        .catch(function(){return 'fail';});
+    },
+    say:function(box,state){
+      var m={ok:['ok','Got it. We will call you back shortly to set up your free estimate. Need us faster? Call <a href="tel:'+PH+'">'+PD+'</a>.'],
+        fast:['warn','One more second, then send it again.'],
+        unconfirmed:['warn','We could not confirm that went through. Please call <a href="tel:'+PH+'">'+PD+'</a> so nothing gets lost.'],
+        fail:['warn','The connection dropped before it sent. Call <a href="tel:'+PH+'">'+PD+'</a> and we will take it by phone.']}[state];
+      if(!m)return;box.className='msg '+m[0];box.innerHTML=m[1];
+    }
+  };
+  document.querySelectorAll('form[data-lead]').forEach(function(f){
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var box=f.querySelector('.msg'),btn=f.querySelector('button[type=submit]');
+      var hp=f.querySelector('input[name="_honey"]');if(hp&&hp.value)return;
+      var nm=f.querySelector('[name="user_name"]'),ph=f.querySelector('[name="user_phone"]');
+      if(!nm.value.trim()||ph.value.replace(/\D/g,'').length<10){box.className='msg warn';box.textContent='Add your name and a 10-digit phone number so we can call you back.';(nm.value.trim()?ph:nm).focus();return;}
+      var label=btn.textContent;btn.textContent='Sending...';btn.disabled=true;
+      var fileIn=f.querySelector('input[type=file]');
+      BGO.photos(fileIn).then(function(pics){
+        var fd=new FormData(f),groups={};
+        if(fileIn)fd.delete(fileIn.name);
+        pics.forEach(function(p,i){fd.append('photo_'+(i+1),p);});
+        f.querySelectorAll('input[type=checkbox]:checked').forEach(function(c){(groups[c.name]=groups[c.name]||[]).push(c.value);});
+        Object.keys(groups).forEach(function(k){fd.delete(k);fd.set(k,groups[k].join(', '));});
+        return BGO.send(fd,f.getAttribute('data-subject'));
+      }).then(function(state){
+        if(state==='blocked'){btn.textContent=label;btn.disabled=false;return;}
+        BGO.say(box,state);
+        if(state==='ok'){f.reset();btn.textContent='Sent';}else{btn.textContent=label;btn.disabled=false;}
+      });
+    });
+  });
+})();
+</script>
+<script src="/ramsey.js" defer></script><script>window.CS_NOTES={"Alabaster": "Warm off-white that does not go yellow in strong foothills light.", "Pure White": "Clean neutral white, the most requested trim color we spray.", "Snowbound": "Soft white with a faint gray cast, good against stone and brick.", "Shoji White": "Warm greige-white that flatters wood tone and timber.", "Delicate White": "Gentle warm white that stays soft under bright sun.", "Commercial White": "Crisp neutral often used on trim and soffit.", "Agreeable Gray": "The reliable greige. Reads warmer outdoors than on the chip.", "Repose Gray": "Cooler greige that holds up without going blue in shade.", "Accessible Beige": "Warm beige that works with Golden's sandstone and brick.", "Mindful Gray": "Mid-tone gray with enough warmth to avoid looking cold.", "Chinchilla": "Balanced mid gray that photographs well on siding.", "Stonehenge Greige": "Earthy greige that suits foothills surroundings.", "Urbane Bronze": "Deep warm charcoal. Excellent on timber, shutters and garage doors.", "Iron Ore": "Near-black that holds its depth under high-altitude sun.", "Tricorn Black": "True black for doors, railings and accents.", "Naval": "Deep navy. Striking on a front door, slower to hold color on a full wall.", "Black Magic": "Soft black with a gray cast, forgiving in full sun.", "Dark Granite": "Charcoal with cool undertone, good against stone.", "Evergreen Fog": "Muted sage that disappears into foothills landscape in the best way.", "Pewter Green": "Deep green-gray. A Golden favorite on cabin and timber homes.", "Rookwood Clay": "Warm clay tone that echoes local sandstone.", "Rustic Adobe": "Terracotta-leaning earth tone for stucco and accents.", "Cliffside Park": "Dusty taupe-green that suits hillside exposure.", "Olive Grove": "Olive with real depth, strong on trim against light siding.", "Dovetail": "Mid-tone warm gray, a workhorse trim color.", "Westhighland White": "Creamy trim white for historic and craftsman homes.", "Gauntlet Gray": "Deep gray trim that frames lighter siding sharply.", "Antique Silver": "Light gray trim option that stays neutral in shade."};</script>
+<script>
+(function(){
+  var target='body', sel={
+    body:{n:'Agreeable Gray',c:'SW 7029',h:'#D1C7B8'},
+    trim:{n:'Pure White',c:'SW 7005',h:'#EDECE6'},
+    accent:{n:'Urbane Bronze',c:'SW 7048',h:'#53514C'}};
+  function $(s){return document.querySelector(s);}
+  function paint(){
+    $('#pvBody').setAttribute('fill',sel.body.h);
+    ['pvTrim1','pvTrim2','pvTrim3','pvTrim4'].forEach(function(id){$('#'+id).setAttribute('fill',sel.trim.h);});
+    $('#pvWin1').setAttribute('stroke',sel.trim.h); $('#pvWin2').setAttribute('stroke',sel.trim.h);
+    $('#pvDoor').setAttribute('fill',sel.accent.h);
+    ['body','trim','accent'].forEach(function(k){
+      $('#nm-'+k).textContent=sel[k].n; $('#cd-'+k).textContent=sel[k].c;
+      $('#dot-'+k).style.background=sel[k].h; $('#lbl-'+k).textContent=sel[k].n;
+    });
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('.tbtn');
+    if(t){document.querySelectorAll('.tbtn').forEach(function(b){b.classList.remove('on');});t.classList.add('on');target=t.dataset.t;return;}
+    var f=e.target.closest('.fbtn');
+    if(f){document.querySelectorAll('.fbtn').forEach(function(b){b.classList.remove('on');});f.classList.add('on');
+      var g=f.dataset.f;
+      document.querySelectorAll('.sw').forEach(function(s){s.hidden=(g!=='all'&&s.dataset.group!==g);});return;}
+    var s=e.target.closest('.sw');
+    if(s){sel[target]={n:s.dataset.name,c:s.dataset.code,h:s.dataset.hex};paint();
+      var note=(window.CS_NOTES||{})[s.dataset.name];
+      if(note) document.getElementById('csNote').textContent=note;
+      return;}
+    if(e.target.id==='csCopy'){
+      var txt='Body: '+sel.body.n+' '+sel.body.c+' | Trim: '+sel.trim.n+' '+sel.trim.c+' | Accent: '+sel.accent.n+' '+sel.accent.c;
+      try{navigator.clipboard.writeText(txt).catch(function(){});}catch(x){}
+      var m=document.getElementById('csMsg');m.className='ok';m.textContent='Copied: '+txt;return;}
+    if(e.target.id==='csSend'){
+      var msg=document.querySelector('#quote textarea');
+      var line='Colors chosen: body '+sel.body.n+' ('+sel.body.c+'), trim '+sel.trim.n+' ('+sel.trim.c+'), accent '+sel.accent.n+' ('+sel.accent.c+').';
+      if(msg){msg.value=(msg.value?msg.value+'\n':'')+line;}
+      var m2=document.getElementById('csMsg');m2.className='ok';m2.textContent='Added to the form below. Scroll down and send it over.';
+      var q=document.getElementById('quote'); if(q) q.scrollIntoView({behavior:'smooth'});
+      return;}
+  });
+  paint();
+})();
+</script>
+</body>
+</html>
