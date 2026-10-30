@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 170" role="img" aria-labelledby="gclt"><title id="gclt">Golden CO Painters, a Painter Hotline crew</title>
+<defs><clipPath id="gcc"><path d="M8 150 L8 70 Q8 10 78 10 Q148 10 148 70 L148 150 Z"/></clipPath><linearGradient id="gcsk" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fdf3e3"/><stop offset="1" stop-color="#f6e2c4"/></linearGradient><linearGradient id="gcsw" x1="0" x2="1"><stop offset="0" stop-color="#b05a24"/><stop offset="1" stop-color="#c9972f"/></linearGradient></defs>
+<g clip-path="url(#gcc)">
+<rect x="0" y="0" width="160" height="160" fill="url(#gcsk)"/>
+<circle cx="104" cy="50" r="18" fill="#c9972f"/>
+<path d="M0 98 L34 62 L58 82 L86 50 L120 86 L160 64 L160 160 L0 160Z" fill="#5f7a52"/>
+<path d="M0 118 L28 96 L60 112 L98 84 L130 104 L160 92 L160 160 L0 160Z" fill="#1b3a5c"/>
+<path d="M-4 150 C30 126 70 150 100 128 C118 115 140 118 164 108" fill="none" stroke="url(#gcsw)" stroke-width="12" stroke-linecap="round"/>
+</g>
+<path d="M8 150 L8 70 Q8 10 78 10 Q148 10 148 70 L148 150 Z" fill="none" stroke="#0f2338" stroke-width="5"/>
+<text x="172" y="78" font-family="'Spectral',Georgia,serif" font-weight="700" font-size="64" letter-spacing="-1" fill="#122033">Golden<tspan dx="12" font-family="'Manrope',system-ui,sans-serif" font-weight="800" font-size="30" letter-spacing="2" fill="#b05a24">CO</tspan></text>
+<text x="174" y="120" font-family="'Manrope',system-ui,sans-serif" font-weight="800" font-size="34" letter-spacing="7" fill="#1b3a5c">PAINTERS</text>
+<path d="M174 136 H612" stroke="#c9972f" stroke-width="3"/>
+<text x="174" y="161" font-family="'Manrope',system-ui,sans-serif" font-weight="700" font-size="16.5" letter-spacing="3.4" fill="#5f7a52">PAINTER HOTLINE · FOOTHILLS</text>
+</svg>

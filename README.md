@@ -1,2 +1,1 @@
-# paintersgoldenco.com
-paintersgoldenco.com
+Static site.
